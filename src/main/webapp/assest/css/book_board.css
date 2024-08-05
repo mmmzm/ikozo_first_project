@@ -1,0 +1,201 @@
+@charset "UTF-8";
+section{
+    height : auto;
+    min-height: 500px;
+    padding : 20px;
+    margin-top : 100px;
+}
+.container{
+    width : 100%;
+    box-sizing: border-box;
+}
+.container *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+@media (min-width: 1200px) {
+    .inner-container{
+        width: 70%;
+        height : auto;
+        margin: 0 auto;
+    }
+}
+
+/* 페이지 선택 시작 */
+.page-title-group{
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+}
+.page-title{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.page-list-group{
+    margin-top : 40px;
+    border-radius: 50px;
+    width: 100%;
+    height : 50px;
+    line-height : 50px;
+    overflow: hidden;
+}
+.page-list-inner{
+    width : 100%;
+    height : 100%;
+    background-color: #f3f5f9;
+    text-align: center;
+}
+.page-list-inner div{
+    display: inline-block;
+    width: 50%;
+    float: left;
+    cursor: pointer;
+}
+.page-list-inner div a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.page-list-inner div.active{
+    background-color: #27403d;
+    border-radius: 50px;    
+    box-shadow: 3px 0 3px rgba(0,0,0,0.5);
+}
+.page-list-inner div.active a{color : white;}
+/* 페이지 선택 끝 */
+
+/* 카테고리 시작 */
+.category-box{
+    vertical-align: middle;
+    width: 100%;
+    height : 35px;
+    line-height : 35px;
+    margin-top : 30px;
+}
+.category-wrap{
+    float: left;
+    width: 50%;
+    height : 100%;
+}
+.category-wrap div{
+    float : left;
+    background-color: #f3f5f9;
+    margin : 0 5px;
+    padding: 0 10px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.category-wrap div a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.category-wrap div.active{background-color: #27403d;}
+.category-wrap div.active a,
+.category-wrap div.redAlert a{color : white;}
+.category-wrap div.redAlert{background-color: #ce3131;}
+/* 카테고리 끝 */
+/* 검색 카테고리 시작 */
+.category-wrap2{
+    text-align: right;
+    line-height: 30px;
+}
+.category-wrap2 *{display: inline-block;}
+.category-wrap2 select,
+.category-wrap2 input[type=search]{
+    border: 1px solid #eee;
+    height: 30px;
+}
+.btn-control{
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    padding-top: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    background-image: url(https://lib.pusan.ac.kr/wp-content/themes/pnul2022/extend/design/assets/images/icon/icon_search_white.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+/* 검색 카테고리 끝 */
+
+/* 테이블 시작 */
+.notice-board{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+    word-break: break-all;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-color: gray;
+}
+.notice-board:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #27403d;
+    z-index: 1;
+}
+.notice-board th{
+    padding: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #222;
+    font-weight: 700;
+    border: 1px solid #eeeef5;
+    background-color: #f3f5f9;
+    vertical-align: middle;
+}
+.notice-board td{
+    padding: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    border: 1px solid #eeeef5;
+    background-color: #fff;
+    vertical-align: middle;
+}
+.notice-board td .active{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px 0;
+}
+.notice-board input[type=checkbox]{
+    cursor: pointer;
+    width : 15px;
+    height : 15px;
+    margin : 5px 0;
+}
+/* 테이블 끝 */
+
+/* 차례 시작 */
+.paging-wrap{
+    margin-top: 40px;
+    text-align: center;
+}
+.paging-wrap .pagination .page-item{
+	text-align: center;
+	margin: 0 15px;}
+.page-item.current{
+    border-radius: 100%;
+    padding: 5px 10px;
+    background-color: #27403d;
+    color: white;
+}   
+/* 차례 끝 */
+.active{
+    background-color: #27403d;
+    color: white;
+}

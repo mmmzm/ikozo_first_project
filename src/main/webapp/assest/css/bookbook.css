@@ -1,0 +1,221 @@
+@charset "UTF-8";
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+	width : 100%;
+	height : auto;
+	overflow-x : hidden;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+ul, ol{
+  list-style: none;
+}
+/* 헤더 스타일 */
+header {
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+/* 로고 스타일 */
+#logo #logoImg {
+    width: 250px;
+    height: auto;
+    position: relative;
+    top :50px;
+    left:70px;
+}
+
+/* 헤더 메뉴 스타일 */
+#headerMenu {
+  position : absolute;
+  right:0;
+  top : 0;
+}
+
+#headerMenu ul {
+    display: flex;
+  list-style: none;
+  margin-top: 10px;
+
+}
+
+#headerMenu li {
+  margin: 0 10px;
+}
+
+#headerMenu a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  font-size: 0.813em;
+}
+
+/* 검색 폼 스타일 */
+#headerSearchForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+#headerSearchForm legend {
+  margin-right: 10px;
+}
+
+#headerSearchForm select,
+#headerSearchForm input[type="text"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#headerSearchForm input{
+
+    border: 3px solid #27403d;
+}
+
+#headerSearchForm button {
+  background-color:#27403d;
+  border-radius: 10px 10px 10px 10px;
+  padding : 5px 10px;
+  cursor: pointer;
+}
+#headerSearchForm button:hover{
+  background-color: white;
+   
+}
+#headerSearchForm button:hover *{
+  color : #27403d;
+}
+#headerSearchForm button *{
+  color : white;
+  font-weight: bold;
+}
+
+
+/* 네비게이션 스타일 */
+nav.main_nav {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  height: 82px;
+  padding: 0;
+  border-top: 1px solid #ebebeb;
+  box-sizing: border-box;
+  margin-top: 50px ;
+  border-bottom: 1px solid #ebebeb;
+
+}
+
+nav.main_nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav.main_nav li {
+  position: relative;
+  margin: 0 20px;
+}
+
+nav.main_nav a {
+  display: block;
+  height: 76px;
+  padding: 0 50px; /* 좌우 여백 조정 */
+  color: #111;
+  font-weight: bold; /* 굵은체로 설정 */
+  line-height: 76px; /* 수직 가운데 정렬 */
+              
+
+}
+
+nav.main_nav ul ul {
+  background-color :#27403d; 
+  width: 200px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index : 255;
+}
+
+nav.main_nav ul li:hover > ul {
+  display: block;
+
+}
+
+nav.main_nav ul ul li {
+  margin: 0;
+  
+}
+
+
+nav.main_nav ul ul li>a {
+color:white;
+  
+}
+
+
+/*section*/
+section{
+  width : 100%;
+  height:500px;
+}
+
+
+footer{
+    border-top: 1px solid #e4e4e4;
+    background-color:#f8f9fa;
+    padding:1rem 0;
+    margin-top:1rem;
+    width:100%;
+    height : 130px;
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+}
+
+.footer-message{
+    font-weight: bold;
+    font-size:0.9rem;
+    color:#545e6f;
+    margin-bottom:0.3rem;
+    margin:0 0 0 0.6rem;
+    position :absolute;
+    font-size :30px;
+    left : 30px;
+    
+    
+}
+.footer-contact{
+    font-size:0.9rem;
+    color:#545e6f;
+    margin:0.6rem;
+}
+.footer-copyright{
+    font-size:0.9rem;
+    color:#545e6f;
+    margin:0.6rem;
+}
+
+.footer-message2{
+	font-size : 20px;
+	position: absolute;
+	left:300px;
+  
+}
+#iconUp {
+  width: 80px;
+  height: auto;
+  position: fixed;
+  z-index : 1000;
+  bottom:50px;
+  right :50px;
+}

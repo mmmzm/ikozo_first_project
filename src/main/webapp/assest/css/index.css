@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* 섹션 스타일 */
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: white;
+}
+#container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 배너 스타일 */
+#sectionDiv {
+  width: 1200px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+#sectionBannerDiv {
+  width: 900px;
+  height: 180px;
+  overflow: hidden;
+  float: left;
+  background-color: silver;
+}
+#sectionBannerDiv ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sectionBannerDiv ul li img {
+  width: 900px;
+  height: 180px;
+  position: absolute;
+  list-style: none;
+}
+
+#sectionLoginDiv {
+  width: 280px;
+  height: 180px;
+  float: right;
+  position: relative;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+#sectionLoginDiv h2 {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  margin-top: -15px;
+  font-size: 1.429em;
+  line-height: 30px;
+}
+
+
+#usernamePost{
+	font-size : 20px;
+	position:absolute;
+	top:80px;
+	left : 35px;
+	padding:10px;
+	border : 1px solid gray;
+	border-radius: 20px;
+}
+/* 공지사항 스타일 */
+
+.boardGroup {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+
+}
+
+.listWrap {
+  width: 45%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.listWrap h2 {
+  margin-bottom: 10px;
+}
+
+.listWrap ul {
+  list-style: none;
+  padding: 0;
+}
+
+.listWrap ul li {
+  margin-bottom: 5px;
+  font-size: 1.143em;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listWrap ul li a {
+  flex: 1;
+}
+
+.listWrap ul li .date {
+  flex: 0 0 auto;
+  margin-left: 10px;
+}
+
+.more, .more2 {
+  text-align: right;
+}
+
+.more img, .more2 img {
+  width: 40px;
+  height: 40px;
+}
+
+.bookListWrap {
+  width: 1200px;
+  background-color: rgb(220, 237, 233);
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+
+

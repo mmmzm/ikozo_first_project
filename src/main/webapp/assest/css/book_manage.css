@@ -1,0 +1,357 @@
+@charset "UTF-8";
+section{
+    height : auto;
+    min-height: 500px;
+    padding : 20px;
+}
+.container{
+    width : 100%;
+    box-sizing: border-box;
+}
+.container *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+@media (min-width: 1200px) {
+   .inner-container{
+       width: 70%;
+       height : auto;
+       margin: 0 auto;
+   }
+}
+
+/* 페이지 선택 시작 */
+.page-title-group{
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+}
+.page-title{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.page-list-group{
+    margin-top : 40px;
+    border-radius: 50px;
+    width: 100%;
+    height : 50px;
+    line-height : 50px;
+    overflow: hidden;
+}
+.page-list-inner{
+    width : 100%;
+    height : 100%;
+    background-color: #f3f5f9;
+    text-align: center;
+}
+.page-list-inner div{
+    display: inline-block;
+    width: 50%;
+    float: left;
+    cursor: pointer;
+}
+.page-list-inner div a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.page-list-inner div.active{
+    background-color: #27403d;
+    border-radius: 50px;    
+    box-shadow: 3px 0 3px rgba(0,0,0,0.5);
+}
+.page-list-inner div.active a{color : white;}
+/* 페이지 선택 끝 */
+
+/* 카테고리 시작 */
+.category-box{
+    vertical-align: middle;
+    width: 100%;
+    height : 35px;
+    line-height : 35px;
+    margin-top : 30px;
+}
+.category-wrap{
+    float: left;
+    width: 50%;
+    height : 100%;
+}
+.category-wrap div{
+    float : left;
+    background-color: #f3f5f9;
+    margin : 0 5px;
+    padding: 0 10px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.category-wrap div a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.category-wrap div.active{background-color: #27403d;}
+.category-wrap div.active a,
+.category-wrap div.redAlert a{color : white;}
+.category-wrap div.redAlert{background-color: #ce3131;}
+/* 카테고리 끝 */
+/* 검색 카테고리 시작 */
+.category-wrap2{
+    text-align: right;
+    line-height: 30px;
+}
+.category-wrap2 *{display: inline-block;}
+.category-wrap2 select,
+.category-wrap2 input[type=search]{
+    border: 1px solid #eee;
+    height: 30px;
+}
+.btn-control{
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    padding-top: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    background-image: url(https://lib.pusan.ac.kr/wp-content/themes/pnul2022/extend/design/assets/images/icon/icon_search_white.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+/* 검색 카테고리 끝 */
+
+/* 테이블 시작 */
+.notice-board{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+    word-break: break-all;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-color: gray;
+}
+.notice-board:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #27403d;
+    z-index: 1;
+}
+.notice-board th{
+    padding: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #222;
+    font-weight: 700;
+    border: 1px solid #eeeef5;
+    background-color: #f3f5f9;
+    vertical-align: middle;
+}
+.notice-board td{
+    padding: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    border: 1px solid #eeeef5;
+    background-color: #fff;
+    vertical-align: middle;
+}
+.notice-board td .active{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px 0;
+}
+.notice-board input[type=checkbox]{
+    cursor: pointer;
+    width : 15px;
+    height : 15px;
+    margin : 5px 0;
+}
+/* 테이블 끝 */
+
+/* 차례 시작 */
+.paging-wrap{
+    margin-top: 40px;
+    text-align: center;
+}
+.paging-wrap .pagination .page-item{margin: 0 15px;}
+.page-item.current{
+    border-radius: 100%;
+    padding: 5px 10px;
+    background-color: #27403d;
+    color: white;
+}   
+/* 차례 끝 */
+.active{
+    background-color: #27403d;
+    color: white;
+}
+
+/* 도서 등록 페이지 시작 */
+#bookForm{
+  text-align : center;
+  margin-bottom : 20px;
+}
+
+#do_save_btn,
+#move_to_list_btn{
+  background-color : #27403d;
+  border-radius : 10px;
+  color : white;
+  margin : 0 auto;
+  text-align : center;
+  border : none;
+  box-shadow : 3px 3px 2px 1px rgba(0,0,0, .5);
+  padding : 15px; 
+  cursor : pointer;
+  font-weight : bold;
+}
+#move_to_list_btn{
+  color : #111;
+  background-color : #e4e4e4;
+}
+#bookForm label input{padding : 5px;}
+#bookForm input,
+#bookForm select,
+#bookForm textarea{
+  border : 1px solid #eee;
+  box-sizing : border-box;
+}
+#bookForm label input,
+#bookForm label select
+{
+  box-shadow : 3px 3px 2px 1px rgba(0,0,0, .5);
+  cursor : pointer;
+  outline: none;
+}
+#bookForm label:nth-child(2),
+#bookForm label:nth-child(3),
+#bookForm label:nth-child(4),
+#bookForm label:nth-child(5),
+#bookForm label:nth-child(6),
+#bookForm label:nth-child(7){
+  width : 33%;
+  height : auto;
+  display : block;
+  float : left; 
+  box-sizing : border-box;
+}
+#bookForm label:nth-child(2) input,
+#bookForm label:nth-child(4) input,
+#bookForm label:nth-child(5) input,
+#bookForm label:nth-child(6) input,
+#bookForm label:nth-child(7) input{ 
+  width : 95%;
+  height : 30px;  
+}
+#bookForm label:nth-child(5),
+#bookForm label:nth-child(6),
+#bookForm label:nth-child(7){
+  margin : 10px 0 20px 0;
+}
+#bookForm label:nth-child(3) select{
+  width : 95%;
+  height : 30px;
+}
+#bookForm label:nth-child(8) textarea{
+  width : 99%; 
+  height : auto;
+  display : block;
+  resize : none;
+  outline: none;  
+  margin : 0 auto;
+  box-shadow : 3px 3px 2px 1px rgba(0,0,0, .5);
+  border-radius : 10px;
+  padding : 10px;
+}
+/* 도서 등록 페이지 끝 */
+
+/* 도서 수정 페이지 시작 */
+#manage_book_update_frm{
+  text-align : center;
+  margin-bottom : 20px;
+}
+#manage_book_update_frm input{
+	text-align : center;
+	margin : 10px auto;
+  width : 99%;
+  height : 40px;  
+  box-shadow : 3px 3px 2px 1px rgba(0,0,0, .5);
+  cursor : pointer;
+  outline: none;  
+  border : 1px solid #eee;
+  box-sizing : border-box;
+  border-radius : 10px;
+  padding : 10px;  
+}
+#manage_book_update_frm input[readonly]{
+  background-color : #27403d;
+	color : white;
+  cursor : not-allowed;	
+}
+#manage_book_update_frm  textarea{
+  width : 99%; 
+  height : auto;
+  display : block;
+  resize : none;
+  outline: none;  
+  margin : 10px auto 0 auto;
+  border : 1px solid #eee; 
+  box-shadow : 3px 3px 2px 1px rgba(0,0,0, .5);
+  border-radius : 10px;
+  padding : 10px;
+}
+#do_update,
+#move_to_list,
+#do_due_date_update,
+#do_returned{
+  background-color : #27403d;
+  border-radius : 10px;
+  color : white;
+  margin : 0 auto;
+  text-align : center;
+  border : none;
+  box-shadow : 3px 3px 2px 1px rgba(0,0,0, .5);
+  padding : 15px; 
+  cursor : pointer;
+  font-weight : bold;
+}
+#move_to_list,
+#do_returned{
+  color : #111;
+  background-color : #e4e4e4;
+}
+/* 도서 수정 페이지 끝 */
+
+/* 페이징 네비게이션 시작 */
+.pagination{
+	margin-top : 30px;
+	border-top : 1px solid #eee;
+	border-bottom : 1px solid #eee;
+	padding : 10px 0;
+}
+.page-item{
+	display : inline-block;
+	width : 35px;
+	height : 35px;
+	line-height : 35px;
+  border-radius : 100%;
+  overflow : hidden;
+  margin : 0 5px;
+}
+.page-item a{
+	display : inline-block;
+	width : 100%;
+	height : 100%;
+}
+/* 페이징 네비게이션 끝 */
